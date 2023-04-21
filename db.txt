@@ -1,0 +1,24 @@
+create table users (
+id int auto_increment unique primary key,
+name  varchar(20),
+mail  varchar(50),
+sex  char(3),
+created_at datetime default current_timestamp
+);
+
+create table items (
+id int auto_increment unique primary key,
+name varchar(20),
+detail varchar(200),
+registered_at datetime default current_timestamp
+);
+
+
+
+show columns from users;
+
+show tables;
+
+insert into items (name,detail)values("りんご","おいしいよ");
+
+insert into users (name,mail,sex)values("佐藤","sato@gmail.com","女");
